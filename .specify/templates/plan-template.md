@@ -17,11 +17,11 @@
   the iteration process.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Language/Version**: [e.g., React 19.2.0 + TypeScript 5.9.3, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
+**Primary Dependencies**: [e.g., Tailwind CSS, shadcn/ui, UIKit, LLVM or NEEDS CLARIFICATION]  
+**Storage**: [if applicable, e.g., localStorage, IndexedDB, PostgreSQL, CoreData, files or N/A]  
+**Testing**: NOT APPLICABLE (project excludes testing per constitution)  
+**Target Platform**: [e.g., Web browsers (modern), iOS 15+, WASM or NEEDS CLARIFICATION]
 **Project Type**: [single/web/mobile - determines source structure]  
 **Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
 **Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
@@ -31,7 +31,13 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Clean Code**: Components are modular and single-responsibility
+- [ ] **Responsive UI**: Mobile-first design with Tailwind responsive classes
+- [ ] **Intuitive UX**: Clear navigation, feedback, and accessibility
+- [ ] **Appealing UI**: shadcn components used, consistent design language
+- [ ] **Minimal Dependencies**: No new dependencies without justification
+- [ ] **NO TESTING**: Confirm no test files, frameworks, or scripts added
+- [ ] **Tech Stack**: React 19.2.0 + TypeScript + Tailwind 4.1.18 + shadcn only
 
 ## Project Structure
 
@@ -56,17 +62,15 @@ specs/[###-feature]/
 -->
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
+# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT for React apps)
 src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
+├── components/        # React components
+│   └── ui/           # shadcn base components
+├── pages/            # Page-level components
+├── hooks/            # Custom React hooks
+├── utils/            # Utility functions
+├── types/            # TypeScript type definitions
+└── App.tsx           # Main application entry
 
 # [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
 backend/
@@ -74,14 +78,13 @@ backend/
 │   ├── models/
 │   ├── services/
 │   └── api/
-└── tests/
 
 frontend/
 ├── src/
 │   ├── components/
 │   ├── pages/
-│   └── services/
-└── tests/
+│   ├── hooks/
+│   └── utils/
 
 # [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
 api/
