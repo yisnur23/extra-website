@@ -7,8 +7,6 @@ interface ServiceCardProps {
   subtitle: string;
   description: string;
   features: string[];
-  ctaText: string;
-  ctaHref: string;
   imageUrl: string;
   imageAlt: string;
   imagePosition: "left" | "right";
@@ -22,8 +20,6 @@ const ServiceCard = ({
   subtitle,
   description,
   features,
-  ctaText,
-  ctaHref,
   imageUrl,
   imageAlt,
   imagePosition,
@@ -32,13 +28,13 @@ const ServiceCard = ({
   const isImageLeft = imagePosition === "left";
 
   return (
-    <section 
-      className="scroll-mt-24 group relative p-8 md:p-10 rounded-3xl bg-white/50 dark:bg-gray-800/30 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/30 dark:hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5" 
+    <section
+      className="scroll-mt-24 group relative p-8 md:p-10 rounded-3xl bg-white/50 dark:bg-gray-800/30 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-primary/30 dark:hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5"
       id={id}
     >
       {/* Subtle corner accent */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/5 to-transparent rounded-3xl pointer-events-none"></div>
-      
+
       <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Image */}
         <motion.div
@@ -63,9 +59,7 @@ const ServiceCard = ({
 
         {/* Content */}
         <motion.div
-          className={`${
-            isImageLeft ? "order-2" : "order-2 md:order-1"
-          } flex flex-col gap-6`}
+          className={`${isImageLeft ? "order-2" : "order-2 md:order-1"} flex flex-col gap-6`}
           initial={{ opacity: 0, x: isImageLeft ? 50 : -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -81,8 +75,8 @@ const ServiceCard = ({
           <p className="text-text-muted dark:text-gray-400 font-body leading-relaxed">{description}</p>
           <ul className="space-y-3 mt-2">
             {features.map((feature, index) => (
-              <motion.li 
-                key={index} 
+              <motion.li
+                key={index}
                 className="flex items-start gap-3"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -94,15 +88,6 @@ const ServiceCard = ({
               </motion.li>
             ))}
           </ul>
-          <div className="pt-4">
-            <a
-              className="inline-flex items-center text-sm font-bold text-text-main dark:text-primary border-b-2 border-primary hover:text-primary transition-colors pb-1"
-              href={ctaHref}
-            >
-              {ctaText}
-              <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-            </a>
-          </div>
         </motion.div>
       </div>
     </section>
