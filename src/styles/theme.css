@@ -1,0 +1,24 @@
+/**
+ * Extra Engineering Solutions Brand Colors
+ * Primary: #ddc8ee (light purple)
+ * Secondary: #ffffff (white)
+ * Accent: #a61e1e (deep red)
+ */
+
+:root {
+  /* Brand Colors */
+  --color-primary: #ddc8ee;
+  --color-primary-dark: #c9aee0;
+  --color-primary-light: #f0e5f9;
+  --color-secondary: #ffffff;
+  --color-accent: #a61e1e;
+  --color-accent-dark: #8a1818;
+  --color-accent-light: #d42828;
+  
+  /* Neutral Colors */
+  --color-dark-bg: #1a1a2e;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-border: #e5e5e5;
+}
+
