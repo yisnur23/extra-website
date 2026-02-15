@@ -10,23 +10,28 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "primary": "#ddc8ef",
-        "primary-dark": "#bba0d5",
-        "background-light": "#f7f6f8",
-        "background-dark": "#19131f",
-        "neutral-dark": "#151217",
-        "neutral-gray": "#766882",
+        primary: "#683995",
+        "primary-dark": "#5A2F80",
+        "background-light": "#F8F8FA",
+        "background-dark": "#0F172A",
+        "card-light": "#FFFFFF",
+        "card-dark": "#1E293B",
+        "text-light": "#1F2937",
+        "text-dark": "#F3F4F6",
+        "subtext-light": "#6B7280",
+        "subtext-dark": "#9CA3AF",
+        "navy-accent": "#1e3a8a",
+        "navy-dark": "#172554",
       },
-      
+
       fontFamily: {
-        "display": ["Space Grotesk", "sans-serif"],
-        "body": ["Noto Sans", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+        display: ["Inter", "sans-serif"],
       },
       borderRadius: {
-        "DEFAULT": "0.25rem",
-        "lg": "0.5rem",
-        "xl": "0.75rem",
-        "full": "9999px"
+        DEFAULT: "0.5rem",
+        lg: "1rem",
+        xl: "1.5rem",
       },
     },
   },
@@ -34,4 +39,3 @@ const config: Config = {
 };
 
 export default config;
-

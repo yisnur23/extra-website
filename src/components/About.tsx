@@ -72,7 +72,7 @@ const About = () => {
 
           <div className="absolute -bottom-6 -left-6 z-20 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg max-w-[200px] hidden md:block border border-gray-100 dark:border-gray-700">
             <div className="flex items-center gap-3 mb-2">
-              <div className="bg-green-100 p-1.5 rounded-full text-green-600">
+              <div className="bg-primary/10 p-1.5 rounded-full text-primary">
                 <span className="material-symbols-outlined text-lg">verified</span>
               </div>
               <span className="text-sm font-bold dark:text-white">Certified Team</span>

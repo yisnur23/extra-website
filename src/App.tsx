@@ -1,19 +1,24 @@
 import LayoutContainer from "@/layout/LayoutContainer";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import Impact from "@/components/Impact";
-import Contact from "@/components/Contact";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Consultation from "./pages/Consultation";
+import About from "./pages/About";
 
 export function App() {
   return (
-    <LayoutContainer>
-      <Hero />
-      <About />
-      <Services />
-      <Impact />
-      <Contact />
-    </LayoutContainer>
+    <Router>
+      <LayoutContainer>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/consultation" element={<Consultation />} />
+        </Routes>
+      </LayoutContainer>
+    </Router>
   );
 }
 

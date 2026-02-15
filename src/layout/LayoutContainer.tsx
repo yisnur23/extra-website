@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 const LayoutContainer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <body className="bg-background-light dark:bg-background-dark text-neutral-dark dark:text-white min-h-screen flex flex-col overflow-x-hidden">
+    <body className="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-sans transition-colors duration-300">
       <Navigation />
       <main className="flex-grow">{children}</main>
       <Footer />
