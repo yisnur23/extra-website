@@ -112,7 +112,7 @@ const Services = () => {
             <div className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
               <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Service Catalog</h3>
               <nav className="space-y-1">
-                {serviceCatalog.map((item, index) => {
+                {serviceCatalog.map((item) => {
                   const isActive = selectedService === item.id;
                   return (
                     <button
