@@ -66,7 +66,10 @@ const ContactMessageCard = () => {
       <form className="space-y-6 relative z-10" onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2" htmlFor="first-name">
+            <label
+              className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2"
+              htmlFor="first-name"
+            >
               First Name
             </label>
             <input
@@ -81,7 +84,10 @@ const ContactMessageCard = () => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2" htmlFor="last-name">
+            <label
+              className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2"
+              htmlFor="last-name"
+            >
               Last Name
             </label>
             <input
@@ -98,7 +104,10 @@ const ContactMessageCard = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2" htmlFor="email">
+            <label
+              className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2"
+              htmlFor="email"
+            >
               Email Address
             </label>
             <input
@@ -113,7 +122,10 @@ const ContactMessageCard = () => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2" htmlFor="phone">
+            <label
+              className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2"
+              htmlFor="phone"
+            >
               Phone Number
             </label>
             <input
@@ -129,7 +141,10 @@ const ContactMessageCard = () => {
           </div>
         </div>
         <div>
-          <label className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2" htmlFor="message">
+          <label
+            className="block text-sm font-medium text-text-muted-light dark:text-text-muted-dark mb-2"
+            htmlFor="message"
+          >
             Message
           </label>
           <textarea
@@ -182,11 +197,13 @@ const ContactInfoPanel = () => {
             <div className="ml-4">
               <h3 className="text-base font-semibold text-gray-900 dark:text-white">Visit Us</h3>
               <p className="mt-1 text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed">
-                Bole Sub City, Woreda 03
-                <br />
-                Addis Ababa, Ethiopia
+                Mega Building, Office Number 1111 Bole Sub City, Addis Ababa, Ethiopia
               </p>
-              <a className="mt-2 inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark" href="#">
+              <a
+                target="_blank"
+                className="mt-2 inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark"
+                href="https://www.google.com/maps/place/Mega+Building,+Addis+Ababa/@9.0003295,38.7707407,17z/data=!4m6!3m5!1s0x164b85adba97d903:0xc117b99fbeb9009c!8m2!3d8.9999798!4d38.7701506!16s%2Fg%2F1jkyvxxw6?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D"
+              >
                 View on Google Maps
                 <span className="material-icons-outlined text-xs ml-1">open_in_new</span>
               </a>
@@ -200,8 +217,8 @@ const ContactInfoPanel = () => {
             </div>
             <div className="ml-4">
               <h3 className="text-base font-semibold text-gray-900 dark:text-white">Call Us</h3>
-              <p className="mt-1 text-sm text-text-muted-light dark:text-text-muted-dark">Mon-Fri from 8am to 5pm</p>
-              <p className="mt-1 text-lg font-bold text-gray-900 dark:text-white">+251 911 234 567</p>
+              <p className="mt-1 text-lg font-bold text-gray-900 dark:text-white">+251 933 941 798</p>
+              <p className="mt-1 text-lg font-bold text-gray-900 dark:text-white">+251 911233958</p>
             </div>
           </div>
           <div className="flex items-start">
@@ -212,17 +229,18 @@ const ContactInfoPanel = () => {
             </div>
             <div className="ml-4">
               <h3 className="text-base font-semibold text-gray-900 dark:text-white">Email Us</h3>
-              <p className="mt-1 text-sm text-text-muted-light dark:text-text-muted-dark">Our friendly team is here to help.</p>
+
               <a
+                target="_blank"
                 className="mt-1 block text-base font-medium text-gray-900 dark:text-white hover:text-primary dark:hover:text-primary transition-colors"
                 href="mailto:info@extraengineering.com"
               >
-                info@extraengineering.com
+                info@extraen.com
               </a>
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-100 dark:border-gray-700 mt-8 pt-8">
+        {/* <div className="border-t border-gray-100 dark:border-gray-700 mt-8 pt-8">
           <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">Follow Us</h3>
           <div className="flex space-x-4">
             <a
@@ -244,7 +262,7 @@ const ContactInfoPanel = () => {
               <i className="fab fa-facebook-f"></i>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800 h-64 lg:h-80 relative group">
         <iframe
@@ -253,7 +271,7 @@ const ContactInfoPanel = () => {
           height="100%"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126115.06880041492!2d38.74!3d8.9806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1684342345678!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.693446741593!2d38.7707406859833!3d9.000329492478299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85adba97d903%3A0xc117b99fbeb9009c!2sMega%20Building%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1771854674430!5m2!1sen!2set"
           style={{ border: 0 }}
           width="100%"
         ></iframe>

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const Impact = () => {
   return (
     <section className="py-16 md:py-24 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
@@ -10,9 +8,9 @@ const Impact = () => {
               Driving Operational Excellence Through Digital Innovation
             </h2>
             <p className="text-lg text-subtext-light dark:text-subtext-dark mb-8 leading-relaxed">
-              We design and implement secure, scalable industrial systems that connect machines, people, and enterprise
-              platforms. From data acquisition to predictive analytics and automation troubleshooting, we deliver
-              measurable performance improvements.
+              The first Ethiopian company sparking digital transformation in industrial automation operations since
+              2019. We seamlessly collect all your data, enable you to design any kind of industrial application with
+              ease, and instantly deploy web-based clients to anyone, anywhere.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8">
               <div className="flex items-center space-x-3">

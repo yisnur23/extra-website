@@ -10,14 +10,15 @@ const Hero = () => {
               <span className="mr-2">✨</span> DIGITALIZATION & INDUSTRY 4.0
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight">
-              Achieve <br className="hidden lg:block" />
+              Connect <br className="hidden lg:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary">
-                Operational Perfection
+                All Your People & Operations!
               </span>
             </h1>
             <p className="text-lg md:text-xl text-subtext-light dark:text-subtext-dark mb-10 max-w-2xl mx-auto lg:mx-0">
-              We provide comprehensive end-to-end industrial digital transformation solutions transforming legacy
-              industrial systems into intelligent, connected data environments
+              Collect all your data, build industrial applications, and scale your systems without limits. Extra
+              Engineering Solution helps your company develop powerful and cost-effective solutions for SCADA, IIoT,
+              MES, and more.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link

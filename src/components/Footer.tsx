@@ -11,8 +11,8 @@ const Footer = () => {
               <img src={logo} alt="EXTRA Engineering logo" className="h-[46px] w-auto" />
             </div>
             <p className="text-charcoal-light text-sm leading-relaxed">
-              Pioneering industrial automation and IoT solutions across Ethiopia and East Africa. Building smarter
-              industries for tomorrow.
+              Leading the way in industrial automation and IIoT implementation across Ethiopia, we empower industries to
+              become data-driven, more efficient, and future-ready.
             </p>
           </div>
           <div>
@@ -48,9 +48,10 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-charcoal mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-charcoal-light">
-              <li>Addis Ababa, Ethiopia</li>
-              <li>info@extra-engineering.com</li>
-              <li>+251 911 123 456</li>
+              <li>Mega Building, Office Number 1111 Bole Sub City Addis Ababa, Ethiopia</li>
+              <li>info@extraen.com</li>
+              <li>+251 933 941 798</li>
+              <li>+251 911 233 958</li>
             </ul>
           </div>
         </div>

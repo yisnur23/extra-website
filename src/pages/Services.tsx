@@ -126,9 +126,6 @@ const Services = () => {
                       onClick={() => handleServiceSelect(item.id)}
                       type="button"
                     >
-                      <span className="w-10 text-xs font-bold tracking-wider opacity-70">
-                        {getServiceNumber(index)}
-                      </span>
                       <span
                         className={`material-icons text-base mr-3 ${isActive ? "opacity-100" : "opacity-70 group-hover:opacity-100"}`}
                       >
