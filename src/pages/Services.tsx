@@ -8,6 +8,7 @@ import OtItService from "@/components/Services/OtItService";
 import PredictiveService from "@/components/Services/PredictiveService";
 import ScadaService from "@/components/Services/ScadaService";
 import SparePartsService from "@/components/Services/SparePartsService";
+import Associations from "@/components/About/Associations";
 
 const serviceCatalog = [
   { id: "automation", label: "Industrial Automation & Digitalization", icon: "smart_toy" },
@@ -157,6 +158,7 @@ const Services = () => {
           <div key={selectedService}>{serviceComponentById[selectedService]}</div>
         </main>
       </div>
+      <Associations />
     </div>
   );
 };

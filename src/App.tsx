@@ -9,15 +9,15 @@ import About from "./pages/About";
 export function App() {
   return (
     <Router>
-      <LayoutContainer>
-        <Routes>
+      <Routes>
+        <Route element={<LayoutContainer />}>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/consultation" element={<Consultation />} />
-        </Routes>
-      </LayoutContainer>
+        </Route>
+      </Routes>
     </Router>
   );
 }

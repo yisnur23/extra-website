@@ -80,15 +80,7 @@ const outcomes = [
   "Immediate operational insights",
 ];
 
-const ApproachStepItem = ({
-  step,
-  isLeft,
-  index,
-}: {
-  step: ApproachStep;
-  isLeft: boolean;
-  index: number;
-}) => {
+const ApproachStepItem = ({ step, isLeft, index }: { step: ApproachStep; isLeft: boolean; index: number }) => {
   const alignmentClass = isLeft ? "md:pr-12 md:text-right md:items-end" : "md:pl-12";
   const contentOrderClass = isLeft ? "order-2 md:order-1" : "order-2 md:order-3";
   const spacerOrderClass = isLeft ? "order-3" : "order-3 md:order-1";
@@ -103,30 +95,11 @@ const ApproachStepItem = ({
       transition={{ duration: 0.55, delay: index * 0.12, ease: "easeOut" }}
     >
       <div className={`md:w-1/2 ${alignmentClass} flex flex-col ${contentOrderClass} pl-16 md:pl-0`}>
-        <span
-          className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full mb-3 bg-primary/10 dark:bg-primary/20 text-primary"
-        >
+        <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full mb-3 bg-primary/10 dark:bg-primary/20 text-primary">
           {step.title}
         </span>
         <h3 className="text-2xl font-bold text-text-light dark:text-text-dark mb-2">{step.heading}</h3>
         <p className="text-subtext-light dark:text-subtext-dark mb-4 leading-relaxed max-w-md">{step.description}</p>
-        <div className="w-full max-w-md mb-4">
-          <p className="text-xs font-bold uppercase tracking-wider text-subtext-light dark:text-subtext-dark mb-2">
-            {step.bulletHeading}
-          </p>
-          <ul className="space-y-1 text-sm text-subtext-light dark:text-subtext-dark">
-            {step.bullets.map((bullet) => (
-              <li key={bullet} className="flex items-start gap-2">
-                <span className="text-primary mt-1">•</span>
-                <span>{bullet}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="bg-white dark:bg-card-dark border border-gray-100 dark:border-gray-700 rounded-lg p-3 inline-flex items-center shadow-sm">
-          <span className="text-xs font-bold text-subtext-light dark:text-subtext-dark uppercase mr-2">Result:</span>
-          <span className="text-sm font-semibold text-primary">{step.result}</span>
-        </div>
       </div>
       <div className="absolute left-6 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-primary border-4 border-white dark:border-gray-900 shadow-lg z-10 order-1 md:order-2">
         <span className="text-white font-bold text-sm">{step.number}</span>
@@ -142,9 +115,7 @@ const OurApproach = () => {
       <div className="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-base text-primary font-bold tracking-widest uppercase">
-            Our Approach
-          </h2>
+          <h2 className="text-base text-primary font-bold tracking-widest uppercase">Our Approach</h2>
           <p className="mt-2 text-4xl md:text-5xl font-extrabold text-text-light dark:text-text-dark tracking-tight">
             Modernizing Legacy Industrial Controllers into IIoT Data Sources
           </p>
