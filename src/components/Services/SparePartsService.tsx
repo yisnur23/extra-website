@@ -1,4 +1,4 @@
-import sparePartsImg from "@/assets/images/spare.jpg";
+import sparePartsImg from "@/assets/images/industrial_spare_parts.jpg";
 
 const portfolio = [
   "Electrical and control components",
