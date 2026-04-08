@@ -81,6 +81,49 @@ h6,
     linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 }
+
+.hero-breakout {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero-breakout {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-breakout {
+    max-width: none;
+    display: grid;
+    grid-template-columns: minmax(0, 32rem) minmax(0, 1fr);
+    align-items: center;
+    column-gap: clamp(1.5rem, 3vw, 3rem);
+    padding-left: max(2rem, calc((100vw - 80rem) / 2 + 2rem));
+    padding-right: 2rem;
+  }
+
+  .hero-breakout__copy {
+    max-width: 32rem;
+  }
+
+  .hero-breakout__media {
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-breakout__media-frame {
+    height: calc(var(--hero-copy-height) + 1.5rem);
+    aspect-ratio: auto;
+  }
+}
+
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;

@@ -19,7 +19,7 @@ const Philosophy = () => {
               <h3 className="text-2xl font-bold text-text-light dark:text-text-dark mb-4">Our Mission</h3>
               <p className="text-lg text-subtext-light dark:text-subtext-dark leading-relaxed">
                 To empower industrial organizations with innovative digital solutions that increase efficiency, reduce
-                downtime, optimize energy usage, and enhance operational visibility.
+                downtime, optimize processes, and enhance operational visibility.
               </p>
             </div>
           </div>
@@ -31,9 +31,9 @@ const Philosophy = () => {
               </div>
               <h3 className="text-2xl font-bold text-text-light dark:text-text-dark mb-4">Our Vision</h3>
               <p className="text-lg text-subtext-light dark:text-subtext-dark leading-relaxed">
-                To empower manufacturers to digitally transform and lead their industries by architecting and
-                delivering scalable Industry 4.0 solutions, leveraging IIoT and Unified Namespace (UNS) concepts to
-                create connected, intelligent, and future-ready operations.
+                To enable manufacturers to digitally transform and lead their industries by designing and delivering
+                scalable Industry 4.0 solutions. We leverage IIoT and Unified Namespace (UNS) concepts to create
+                connected, intelligent, and future-ready operations.
               </p>
             </div>
           </div>
